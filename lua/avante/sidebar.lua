@@ -409,7 +409,7 @@ local function generate_display_content(replacement)
       end)
       :totable()
     local result_lines =
-      vim.list_extend(vim.list_slice(lines, 1, replacement.last_search_tag_start_line), { "🤔 Thought content:" })
+      vim.list_extend(vim.list_slice(lines, 1, replacement.last_search_tag_start_line), { "🤔🤔🤔 :" })
     result_lines = vim.list_extend(result_lines, formatted_thinking_content_lines)
     result_lines = vim.list_extend(result_lines, vim.list_slice(lines, last_think_tag_end_line + 1))
     return table.concat(result_lines, "\n")
